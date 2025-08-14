@@ -40,7 +40,7 @@
         <div class="md:w-1/2 md:pl-12 animate-slide-in-right">
             <h2 class="text-4xl font-bold mb-4">Tres pasos para un reencuentro rápido</h2>
             <p class="text-gray-700 mb-4">Creamos una alerta geolocalizada que se difunde en redes sociales y canales locales. Tu anuncio llega exactamente a las personas correctas.</p>
-            <a href="#" class="inline-block bg-[#2563EB] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium">Ver planes de rescate</a>
+            <a href="{{ route('pricing') }}" class="inline-block bg-[#2563EB] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium">Ver planes de rescate</a>
             <div class="mt-6 grid grid-cols-2 gap-6">
                 <div>
                     <p class="text-3xl font-bold">82+</p>
@@ -153,6 +153,6 @@
 <section class="bg-[#E0F7FA] py-20 text-center animate-fade-in">
     <h2 class="text-2xl md:text-4xl font-bold mb-4">Únete a nuestra red de búsqueda y reencuentros</h2>
     <p class="text-[#4B5563] mb-6">Explora casos en tiempo real y sé parte de una comunidad que ayuda.</p>
-    <a href="#" class="inline-block bg-[#2563EB] text-white font-semibold px-6 py-3 rounded-md shadow-md hover:scale-105 transition">Explorar mapa</a>
+    <a href="{{ route('map') }}" class="inline-block bg-[#2563EB] text-white font-semibold px-6 py-3 rounded-md shadow-md hover:scale-105 transition">Explorar mapa</a>
 </section>
 @endsection

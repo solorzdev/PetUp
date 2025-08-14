@@ -69,7 +69,7 @@
         ],
         [
           'id'=>5,'nombre'=>'Milo','tipo'=>'perro','ciudad'=>'Puebla, Pue.','fecha'=>'2025-07-19','dias'=>3,
-          'foto'=>'https://images.unsplash.com/photo-1557970877-8f3dbcd9c37a?q=80&w=1200&auto=format&fit=crop',
+          'foto'=>'https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg',
           'resumen'=>'Detectado por cámaras de un negocio. Se coordinó su entrega.',
         ],
         [

@@ -82,7 +82,7 @@
                      class="rounded-2xl shadow-lg aspect-[3/4] object-cover">
                 <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?q=80&w=800&auto=format&fit=crop" alt="Rescate"
                      class="rounded-2xl shadow-lg aspect-[4/3] object-cover col-span-2">
-                <img src="https://images.unsplash.com/photo-1628009368238-c1c9b89f8c77?q=80&w=800&auto=format&fit=crop" alt="Consulta veterinaria"
+                <img src="https://images.pexels.com/photos/6234980/pexels-photo-6234980.jpeg" alt="Consulta veterinaria"
                      class="rounded-2xl shadow-lg aspect-square object-cover">
             </div>
         </div>
@@ -203,7 +203,7 @@
             </div>
             <div class="order-1 md:order-2">
                 {{-- Nueva imagen: perro + contexto de ubicación (carga ok) --}}
-                <img src="https://images.unsplash.com/photo-1619983081563-430f6360270d?q=80&w=1200&auto=format&fit=crop" alt="Persona usando mapa para buscar mascota"
+                <img src="https://images.pexels.com/photos/7362886/pexels-photo-7362886.jpeg" alt="Persona usando mapa para buscar mascota"
                     class="rounded-3xl shadow-2xl aspect-video object-cover">
 
             </div>

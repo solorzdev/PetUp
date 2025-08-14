@@ -112,7 +112,7 @@
                     <span x-text="open === 2 ? '-' : '+'"></span>
                 </button>
                 <div x-show="open === 2" x-transition class="px-6 pb-6 pt-2 flex flex-col lg:flex-row items-center gap-6">
-                    <img src="https://cdn.pixabay.com/photo/2016/02/19/11/53/dogs-1207816_640.jpg" alt="Hipo y Chimuelo" class="w-full lg:w-1/3 rounded-xl shadow-md object-cover">
+                    <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Hipo y Chimuelo" class="w-full lg:w-1/3 rounded-xl shadow-md object-cover">
                     <div class="lg:w-2/3">
                         <h3 class="text-[#064E3B] font-semibold text-md mb-2">Su historia</h3>
                         <p class="mb-4 text-gray-700">Después de semanas de angustia, Sebastián lanzó una alerta para encontrar a sus perros. Los vecinos ayudaron rápidamente.</p>
@@ -133,7 +133,7 @@
                     <span x-text="open === 3 ? '-' : '+'"></span>
                 </button>
                 <div x-show="open === 3" x-transition class="px-6 pb-6 pt-2 flex flex-col lg:flex-row items-center gap-6">
-                    <img src="https://cdn.pixabay.com/photo/2015/03/26/10/01/husky-690545_640.jpg" alt="Sam" class="w-full lg:w-1/3 rounded-xl shadow-md object-cover">
+                    <img src="https://images.pexels.com/photos/333083/pexels-photo-333083.jpeg" alt="Sam" class="w-full lg:w-1/3 rounded-xl shadow-md object-cover">
                     <div class="lg:w-2/3">
                         <h3 class="text-[#064E3B] font-semibold text-md mb-2">Su historia</h3>
                         <p class="mb-4 text-gray-700">Sam fue adoptado temporalmente por otra familia que lo cuidó. Al recibir la alerta, coordinaron su regreso sin problema.</p>

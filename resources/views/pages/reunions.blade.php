@@ -11,7 +11,7 @@
           Historias con final feliz 🐾
         </h1>
         <p class="mt-3 md:text-lg text-[#065F46]/80">
-          Una selección de casos reales de reencuentros logrados con la red de PetUp.
+          Una selección de casos reales de reencuentros logrados con la red de BuscaDog.
         </p>
       </div>
       <a href="{{ route('map') }}"

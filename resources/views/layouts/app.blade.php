@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PETUP</title>
+    <title>BuscaDog</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
     <style>[x-cloak]{display:none!important}</style>
@@ -17,8 +17,11 @@
      class="sticky top-0 z-50 bg-gradient-to-br from-[#DCFCE7] to-[#C7F7DE] shadow-md">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <div class="flex items-center gap-2">
-            <span class="text-2xl">🐶</span>
-            <h1 class="text-xl md:text-2xl font-extrabold text-[#065F46]">PetUp</h1>
+                <a href="{{ route('home') }}">
+                    <img src="{{ asset('images/logo.png') }}" 
+                        alt="BuscaDog Logo" 
+                        class="h-8 md:h-10 w-auto">
+                </a>
             </div>
 
             <!-- Desktop -->
@@ -56,7 +59,7 @@
             <div class="flex items-center justify-between px-6 py-4 border-b">
             <div class="flex items-center gap-2">
                 <span class="text-2xl">🐶</span>
-                <span class="font-extrabold text-lg text-[#065F46]">PetUp</span>
+                <span class="font-extrabold text-lg text-[#065F46]">BuscaDog</span>
             </div>
             <button @click="open=false" class="text-[#065F46]">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24"
@@ -94,13 +97,13 @@
     <!-- Footer -->
     <footer class="bg-gradient-to-br from-[#DCFCE7] to-[#C7F7DE] py-10 text-center text-[#065F46]">
         <div class="max-w-4xl mx-auto px-4">
-            <p class="text-lg font-semibold mb-2">PetUp - Conectando corazones, rescatando vidas</p>
+            <p class="text-lg font-semibold mb-2">BuscaDog - Conectando corazones, rescatando vidas</p>
             <div class="flex justify-center gap-6 text-sm mb-4">
                 <a href="#" class="hover:text-[#2563EB] transition">Términos</a>
                 <a href="#" class="hover:text-[#2563EB] transition">Privacidad</a>
                 <a href="#" class="hover:text-[#2563EB] transition">Contacto</a>
             </div>
-            <p class="text-xs text-gray-600">© {{ date('Y') }} PetUp. Todos los derechos reservados.</p>
+            <p class="text-xs text-gray-600">© {{ date('Y') }} BuscaDog. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>

@@ -11,7 +11,7 @@
         Preguntas frecuentes
       </h1>
       <p class="mt-5 text-lg md:text-2xl text-[#065F46]/80 font-medium">
-        Respuestas rápidas sobre cómo usar PetUp, pagos y el mapa.
+        Respuestas rápidas sobre cómo usar BuscaDog, pagos y el mapa.
       </p>
     </div>
   </div>
@@ -72,7 +72,7 @@
       ['q'=>'¿Puedo editar mi alerta después?','a'=>'Sí. Desde “Mis alertas” puedes actualizar texto, fotos y zona. Los cambios se reflejan en segundos.'],
     ],
     'pagos' => [
-      ['q'=>'¿PetUp es gratis?','a'=>'La publicación básica es gratuita en esta demo. Ofrecemos planes de difusión con mayor alcance y reportes priorizados.'],
+      ['q'=>'¿BuscaDog es gratis?','a'=>'La publicación básica es gratuita en esta demo. Ofrecemos planes de difusión con mayor alcance y reportes priorizados.'],
       ['q'=>'¿Qué medios de pago aceptan?','a'=>'Tarjeta de crédito/débito. En el lanzamiento consideraremos transferencias locales.'],
       ['q'=>'¿Puedo pedir factura?','a'=>'Sí, al completar el pago podrás cargar datos fiscales para generar tu comprobante.'],
     ],
@@ -83,7 +83,7 @@
     ],
     'cuenta' => [
       ['q'=>'Olvidé mi contraseña','a'=>'Usa “Recuperar acceso” para recibir un correo de restablecimiento.'],
-      ['q'=>'¿Cómo contacto soporte?','a'=>'Escríbenos desde el botón “Ayuda” o al correo soporte@petup.demo. Respondemos en horario laboral.'],
+      ['q'=>'¿Cómo contacto soporte?','a'=>'Escríbenos desde el botón “Ayuda” o al correo soporte@BuscaDog.demo. Respondemos en horario laboral.'],
       ['q'=>'¿Puedo eliminar mi cuenta?','a'=>'Sí. Desde Ajustes > Privacidad puedes solicitar la eliminación y desindexación de tus alertas.'],
     ],
   ];
@@ -135,7 +135,7 @@
         Ver mapa de búsquedas
       </a>
     </div>
-    <p class="mt-3 text-[#065F46]/80">También puedes escribir a soporte@petup.demo.</p>
+    <p class="mt-3 text-[#065F46]/80">También puedes escribir a soporte@BuscaDog.demo.</p>
   </div>
 </section>
 

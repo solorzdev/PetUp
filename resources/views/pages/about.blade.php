@@ -67,7 +67,7 @@
       <p class="mt-4 text-gray-700">
         En 2021, durante una mudanza, <span class="font-semibold">Ana</span> perdió a <span class="font-semibold">Pepper</span>.
         Sin resultados por días, activó una alerta geolocalizada. Ese mismo día, un vecino vio el aviso y llamó.
-        El reencuentro nos marcó: de ahí nace <span class="font-semibold text-emerald-700">PetUp</span>.
+        El reencuentro nos marcó: de ahí nace <span class="font-semibold text-emerald-700">BuscaDog</span>.
       </p>
 
       <p class="mt-6 italic text-gray-600">Escucha la historia completa:</p>
@@ -96,7 +96,7 @@
           <img src="https://i.pravatar.cc/120?img=15" class="w-14 h-14 rounded-full object-cover" alt="Fundador">
           <div>
             <p class="font-semibold text-gray-900">Santiago Elizalde</p>
-            <p class="text-gray-500 text-sm">CEO y creador de PetUp</p>
+            <p class="text-gray-500 text-sm">CEO y creador de BuscaDog</p>
           </div>
         </div>
       </div>

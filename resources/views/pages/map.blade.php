@@ -22,7 +22,7 @@
   </div>
 
   {{-- Contenedor del mapa --}}
-  <div id="petup-map" class="w-full h-[calc(100vh-180px)]"></div>
+  <div id="BuscaDog-map" class="w-full h-[calc(100vh-180px)]"></div>
 
   <!-- Dock de controles: dentro del mapa, abajo-izquierda -->
   <div class="absolute inset-0 z-[650] pointer-events-none">
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const cases = @json($cases ?? []);
 
   // ====== Mapa + capas base claro/oscuro ======
-  const map = L.map('petup-map', { zoomControl: true });
+  const map = L.map('BuscaDog-map', { zoomControl: true });
   const light = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { maxZoom: 20, attribution:'&copy; OpenStreetMap &copy; CARTO' });
   const dark  = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',  { maxZoom: 20, attribution:'&copy; OpenStreetMap &copy; CARTO' });
   light.addTo(map);
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function liveLabel(active){ liveBtn.innerHTML = active ? '⏹ <span>En vivo</span>' : '▶ <span>En vivo</span>'; }
 
-  const LAST_KEY = 'petup:lastpos';
+  const LAST_KEY = 'BuscaDog:lastpos';
   function saveLast(ll, acc){ try { localStorage.setItem(LAST_KEY, JSON.stringify({ ll, acc, ts: Date.now() })); } catch {} }
   function loadLast(){ try { const j = localStorage.getItem(LAST_KEY); return j ? JSON.parse(j) : null; } catch { return null; } }
 
@@ -375,7 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <style>
   /* Fondo del mapa y clusters con estilo de marca */
-  #petup-map { background:#f8fafc; }
+  #BuscaDog-map { background:#f8fafc; }
   .marker-cluster div{
     background:#065F46; color:#fff; border:2px solid #C7F7DE;
     box-shadow:0 8px 20px rgba(0,0,0,.15);

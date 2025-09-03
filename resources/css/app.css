@@ -1,11 +1,37 @@
-@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&family=Parkinsans:wght@300..800&display=swap');
+@import "tailwindcss";
 
+/* Archivos a escanear para purge */
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
+/* Tema de la marca */
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-display: "Titan One", system-ui, sans-serif;
+  --font-sans: Parkinsans, system-ui, sans-serif;
+
+  --color-primary-500: #5642BB;
+  --color-accent-500:  #32BAEA;
+  --color-warn-500:    #E53C49;
+  --color-amber-500:   #FBB03B;
+  --color-ink:         #0B1220;
+  --color-surface:     #F7FFF9;
+
+  --shadow-soft: 0 10px 30px rgba(0,0,0,.12);
+  --radius-3xl: 1.5rem;
+}
+
+/* Utilidades extra */
+.bg-paws {
+  --c:#ffffff20;
+  background-image: radial-gradient(var(--c) 2px, transparent 3px);
+  background-size: 20px 20px;
+}
+
+.bg-hearts {
+  --c:#ffffff20;
+  background-image: radial-gradient(var(--c) 2px, transparent 3px);
+  background-size: 24px 24px;
 }

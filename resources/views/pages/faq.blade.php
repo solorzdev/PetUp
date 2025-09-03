@@ -2,15 +2,11 @@
 
 @section('content')
 {{-- =================== HERO =================== --}}
-
-<section class="relative w-full overflow-hidden bg-gradient-to-br from-[#DCFCE7] to-[#C7F7DE] text-[#065F46]">
-  <!-- Contenido centrado y alto generoso -->
+<section class="relative w-full overflow-hidden bg-[#32BAEA] text-white">
   <div class="max-w-6xl mx-auto px-6 py-24 md:py-40 min-h-[50vh] grid place-items-center text-center">
     <div>
-      <h1 class="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight">
-        Preguntas frecuentes
-      </h1>
-      <p class="mt-5 text-lg md:text-2xl text-[#065F46]/80 font-medium">
+      <h1 class="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight">Preguntas frecuentes</h1>
+      <p class="mt-5 text-lg md:text-2xl text-white/90 font-medium">
         Respuestas rápidas sobre cómo usar BuscaDog, pagos y el mapa.
       </p>
     </div>
@@ -19,7 +15,6 @@
   <!-- Perrito izquierdo -->
   <div class="hidden md:block absolute left-8 xl:left-12 top-1/2 -translate-y-1/2">
     <div class="w-40 h-40 xl:w-48 xl:h-48 grid place-items-center rounded-3xl bg-white/85 shadow-2xl ring-1 ring-black/5 rotate-[-6deg]">
-      <!-- Si prefieres un SVG/PNG local, sustituye el span por <img src="/images/icons/dog-left.svg" class="w-16 xl:w-20" alt="perrito"> -->
       <span class="text-6xl xl:text-7xl bob">🐶</span>
     </div>
   </div>
@@ -27,18 +22,15 @@
   <!-- Perrito derecho -->
   <div class="hidden md:block absolute right-8 xl:right-12 top-1/2 -translate-y-1/2">
     <div class="w-40 h-40 xl:w-48 xl:h-48 grid place-items-center rounded-3xl bg-white/85 shadow-2xl ring-1 ring-black/5 rotate-[6deg]">
-      <!-- <img src="/images/icons/dog-right.svg" class="w-16 xl:w-20" alt="perrito"> -->
       <span class="text-6xl xl:text-7xl bob">🐕</span>
     </div>
   </div>
 </section>
 
 <style>
-  /* oscilación suave de los perritos */
   .bob { animation: bob 3.6s ease-in-out infinite; display:inline-block; }
   @keyframes bob { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-8px) } }
 </style>
-
 
 {{-- =================== CATEGORÍAS =================== --}}
 <section class="bg-white">
@@ -54,8 +46,8 @@
       @endphp
       @foreach($cats as $c)
         <a href="#{{ $c['id'] }}"
-           class="rounded-2xl border border-[#065F46]/20 bg-white hover:bg-[#DCFCE7]/40 transition p-5 block">
-          <h3 class="font-semibold text-[#065F46]">{{ $c['title'] }}</h3>
+           class="rounded-2xl border border-[#32BAEA]/30 bg-white hover:bg-[#32BAEA]/15 transition p-5 block">
+          <h3 class="font-semibold text-[#5642BB]">{{ $c['title'] }}</h3>
           <p class="text-sm text-gray-600">{{ $c['desc'] }}</p>
         </a>
       @endforeach
@@ -89,11 +81,11 @@
   ];
 @endphp
 
-<section class="bg-gray-50">
+<section class="bg-[#FBB03B]/5">
   <div class="max-w-7xl mx-auto px-6 py-12 md:py-16">
     @foreach ($faqs as $catId => $items)
       <div id="{{ $catId }}" class="scroll-mt-24">
-        <h2 class="text-2xl md:text-3xl font-extrabold text-[#065F46]">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-[#5642BB]">
           @switch($catId)
             @case('publicar') Publicar alerta @break
             @case('pagos') Pagos y planes @break
@@ -102,12 +94,12 @@
           @endswitch
         </h2>
 
-        <div class="mt-6 divide-y rounded-2xl border border-[#065F46]/15 bg-white">
+        <div class="mt-6 divide-y rounded-2xl border border-[#32BAEA]/25 bg-white">
           @foreach ($items as $i => $f)
             <details class="group p-5" data-faq>
               <summary class="cursor-pointer list-none flex items-center justify-between">
-                <span class="font-semibold text-[#065F46]">{{ $f['q'] }}</span>
-                <span class="text-xl text-gray-400 transition-transform group-open:rotate-45">+</span>
+                <span class="font-semibold text-[#5642BB]">{{ $f['q'] }}</span>
+                <span class="text-xl text-[#32BAEA] transition-transform group-open:rotate-45">+</span>
               </summary>
               <p class="mt-3 text-gray-700">{{ $f['a'] }}</p>
             </details>
@@ -116,33 +108,33 @@
       </div>
 
       @if (!$loop->last)
-        <hr class="my-10 border-[#065F46]/10">
+        <hr class="my-10 border-[#32BAEA]/20">
       @endif
     @endforeach
   </div>
 </section>
 
 {{-- =================== CTA FINAL =================== --}}
-<section class="w-full bg-gradient-to-br from-[#DCFCE7] to-[#C7F7DE] text-[#065F46]">
+<section class="w-full bg-[#5642BB] text-white">
   <div class="max-w-7xl mx-auto px-6 py-12 md:py-16">
     <div class="md:flex md:items-center md:justify-between gap-6">
-      <h3 class="text-2xl md:text-3xl font-extrabold max-w-3xl">
-        ¿No resolvimos tu duda?
-      </h3>
+      <h3 class="text-2xl md:text-3xl font-extrabold max-w-3xl">¿No resolvimos tu duda?</h3>
       <a href="{{ route('map') }}"
-         class="mt-6 md:mt-0 inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold text-white
-                bg-[#2563EB] shadow-lg hover:bg-[#1d4ed8] transition">
+         class="mt-6 md:mt-0 inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold
+                text-[#0B1220] bg-[#FBB03B] shadow-lg hover:bg-[#e89a17] transition">
         Ver mapa de búsquedas
       </a>
     </div>
-    <p class="mt-3 text-[#065F46]/80">También puedes escribir a soporte@BuscaDog.demo.</p>
+    <p class="mt-3 text-white/85">También puedes escribir a soporte@BuscaDog.demo.</p>
   </div>
 </section>
 
 {{-- ===== TESTIMONIOS ===== --}}
 <section class="bg-gray-50">
   <div class="max-w-7xl mx-auto px-6 py-16 md:py-20">
-    <h3 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900">No estás solo. Otras familias lo lograron.</h3>
+    <h3 class="text-3xl md:text-4xl font-extrabold text-center text-[#5642BB]">
+      No estás solo. Otras familias lo lograron.
+    </h3>
 
     <div class="mt-10 grid md:grid-cols-3 gap-6">
       @php
@@ -155,38 +147,37 @@
 
       @foreach($cards as $i => $c)
         @php $isMiddle = $i === 1; @endphp
-
         <article @class([
             'rounded-3xl p-6 border shadow-sm transition',
-            // Tarjeta de en medio: verde más oscuro
-            'bg-[#064E3B] text-white border-[#064E3B]' => $isMiddle,
-            // Resto con tu lógica original
-            'bg-emerald-800 text-emerald-50' => $c['dark'] && ! $isMiddle,
-            'bg-white' => ! $c['dark'],
+            // Tarjeta central: morado
+            'bg-[#5642BB] text-white border-[#5642BB]' => $isMiddle,
+            // Si el item es "dark" y no es la central -> celeste
+            'bg-[#32BAEA] text-white border-[#32BAEA]' => $c['dark'] && ! $isMiddle,
+            // Resto: blanco con borde suave celeste
+            'bg-white border border-[#32BAEA]/30' => ! $c['dark'] && ! $isMiddle,
         ])>
-            <div class="flex items-center gap-3">
+          <div class="flex items-center gap-3">
             <img src="{{ $c['img'] }}" class="w-10 h-10 rounded-full object-cover" alt="avatar">
             <div>
-                <p class="font-semibold">{{ $c['n'] }}</p>
-                <p class="{{ $isMiddle ? 'text-emerald-100' : ($c['dark'] ? 'text-emerald-200' : 'text-gray-500') }} text-sm">
+              <p class="font-semibold">{{ $c['n'] }}</p>
+              <p class="{{ $isMiddle ? 'text-white/80' : ($c['dark'] ? 'text-white/85' : 'text-gray-500') }} text-sm">
                 {{ $c['c'] }}
-                </p>
+              </p>
             </div>
-            </div>
+          </div>
 
-            <p class="mt-4">{{ $c['t'] }}</p>
+          <p class="mt-4">{{ $c['t'] }}</p>
 
-            <div class="mt-6 flex items-center justify-between">
+          <div class="mt-6 flex items-center justify-between">
             <div class="flex gap-1">
-                @for($j=0; $j<5; $j++)
-                <span class="w-4 h-4 inline-block text-yellow-400">★</span>
-                @endfor
+              @for($j=0; $j<5; $j++)
+                <span class="w-4 h-4 inline-block text-[#FBB03B]">★</span>
+              @endfor
             </div>
-            <span class="{{ $isMiddle ? 'text-emerald-100/60' : ($c['dark'] ? 'text-emerald-300/60' : 'text-gray-300') }} text-3xl">”</span>
-            </div>
+            <span class="{{ $isMiddle ? 'text-white/60' : ($c['dark'] ? 'text-white/70' : 'text-gray-300') }} text-3xl">”</span>
+          </div>
         </article>
-        @endforeach
-
+      @endforeach
     </div>
   </div>
 </section>
@@ -212,13 +203,13 @@
   })();
 </script>
 
-{{-- (Opcional) Schema.org para SEO (seguro, sin Blade dentro del <script>) --}}
+{{-- (Opcional) Schema.org para SEO --}}
 @php
   $schema = [
     '@context' => 'https://schema.org',
     '@type'    => 'FAQPage',
     'mainEntity' => collect($faqs)
-      ->flatten(1) // une los grupos
+      ->flatten(1)
       ->map(fn($f) => [
         '@type' => 'Question',
         'name'  => $f['q'],
@@ -232,5 +223,4 @@
 <script type="application/ld+json">
 {!! json_encode($schema, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES) !!}
 </script>
-
 @endsection

@@ -2,41 +2,40 @@
 
 @section('content')
 {{-- HERO --}}
-<section class="w-full bg-gradient-to-br from-[#DCFCE7] to-[#C7F7DE] text-[#065F46]">
+<section class="w-full bg-[#32BAEA] text-white">
   <div class="max-w-7xl mx-auto px-6 py-14 md:py-20">
-
     <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
       <div class="flex-1">
         <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold">
           Historias con final feliz 🐾
         </h1>
-        <p class="mt-3 md:text-lg text-[#065F46]/80">
+        <p class="mt-3 md:text-lg text-white/90">
           Una selección de casos reales de reencuentros logrados con la red de BuscaDog.
         </p>
       </div>
       <a href="{{ route('map') }}"
-         class="inline-flex items-center gap-2 rounded-full bg-[#2563EB] text-white px-5 py-2.5 font-semibold shadow hover:bg-[#1d4ed8] transition">
+         class="inline-flex items-center gap-2 rounded-full bg-[#FBB03B] text-[#0B1220] px-5 py-2.5 font-semibold shadow hover:bg-[#e89a17] transition">
         Ver búsquedas activas
       </a>
     </div>
 
     {{-- Stats --}}
     <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="rounded-2xl bg-white/70 backdrop-blur p-4 text-center shadow border border-black/5">
-        <p class="text-3xl font-extrabold">9,200+</p>
-        <p class="text-xs text-[#065F46]/80">Reencuentros</p>
+      <div class="rounded-2xl bg-white/80 backdrop-blur p-4 text-center shadow border border-black/5">
+        <p class="text-3xl font-extrabold text-[#5642BB]">9,200+</p>
+        <p class="text-xs text-[#5642BB]">Reencuentros</p>
       </div>
-      <div class="rounded-2xl bg-white/70 backdrop-blur p-4 text-center shadow border border-black/5">
-        <p class="text-3xl font-extrabold">48</p>
-        <p class="text-xs text-[#065F46]/80">Hoy</p>
+      <div class="rounded-2xl bg-white/80 backdrop-blur p-4 text-center shadow border border-black/5">
+        <p class="text-3xl font-extrabold text-[#5642BB]">48</p>
+        <p class="text-xs text-[#5642BB]">Hoy</p>
       </div>
-      <div class="rounded-2xl bg-white/70 backdrop-blur p-4 text-center shadow border border-black/5">
-        <p class="text-3xl font-extrabold">3.2</p>
-        <p class="text-xs text-[#065F46]/80">Días promedio</p>
+      <div class="rounded-2xl bg-white/80 backdrop-blur p-4 text-center shadow border border-black/5">
+        <p class="text-3xl font-extrabold text-[#5642BB]">3.2</p>
+        <p class="text-xs text-[#5642BB]">Días promedio</p>
       </div>
-      <div class="rounded-2xl bg-white/70 backdrop-blur p-4 text-center shadow border border-black/5">
-        <p class="text-3xl font-extrabold">12</p>
-        <p class="text-xs text-[#065F46]/80">Países</p>
+      <div class="rounded-2xl bg-white/80 backdrop-blur p-4 text-center shadow border border-black/5">
+        <p class="text-3xl font-extrabold text-[#5642BB]">12</p>
+        <p class="text-xs text-[#5642BB]">Países</p>
       </div>
     </div>
   </div>
@@ -86,7 +85,7 @@
         <div class="relative">
           <img src="{{ $r['foto'] }}" alt="Foto de {{ $r['nombre'] }}" class="w-full h-60 object-cover">
           <div class="absolute top-3 left-3">
-            <span class="rounded-full bg-emerald-600 text-white text-xs px-2.5 py-1 shadow">¡Reunido!</span>
+            <span class="rounded-full bg-[#FBB03B] text-white text-xs px-2.5 py-1 shadow">¡Reunido!</span>
           </div>
           <div class="absolute top-3 right-3 rounded-full bg-white/90 backdrop-blur text-gray-800 text-xs px-2.5 py-1 shadow border border-black/5">
             {{ $r['dias'] }} días
@@ -102,7 +101,7 @@
 
           <div class="mt-4 flex items-center justify-between">
             <button
-              class="js-open-story inline-flex items-center rounded-lg bg-[#2563EB] text-white text-sm px-3 py-1.5 hover:bg-[#1d4ed8] transition"
+              class="js-open-story inline-flex items-center rounded-lg bg-[#5642BB] text-white text-sm px-3 py-1.5 hover:bg-[#1d4ed8] transition"
               data-id="{{ $r['id'] }}">
               Ver historia
             </button>
@@ -147,12 +146,11 @@
           </div>
 
           <div class="mt-6 flex items-center gap-2">
-            <a href="{{ route('map') }}" class="inline-flex rounded-lg bg-[#2563EB] text-white text-sm px-3 py-1.5 hover:bg-[#1d4ed8]">Ver mapa</a>
+            <a href="{{ route('map') }}" class="inline-flex rounded-lg bg-[#5642BB] text-white text-sm px-3 py-1.5 hover:bg-[#382C77]">Ver mapa</a>
             <button id="mShare" class="inline-flex rounded-lg border text-sm px-3 py-1.5 hover:bg-gray-50">Compartir</button>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>

@@ -2,80 +2,92 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="bg-gradient-to-br from-[#DCFCE7] to-[#C7F7DE] text-[#065F46] py-24 transition duration-500 ease-in-out">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
-        <div class="md:w-1/2 animate-fade-in-up">
-            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-                Perdida no significa imposible.
-                <br>
-                <span class="text-[#2563EB]">Volvamos a encontrarnos.</span>
-            </h1>
-            <p class="text-[#4B5563] text-lg md:text-xl mb-8">
-                Lanza una alerta inteligente y conecta con vecinos, rescatistas y familias dispuestas a ayudar. Tu mascota está más cerca de lo que crees.
-            </p>
-            <form class="flex flex-col sm:flex-row items-center gap-4">
-                <input type="text" placeholder="Nombre de tu mascota..." class="w-full sm:w-80 px-5 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2563EB]">
-                <button type="submit" class="bg-[#2563EB] hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition">
-                    Buscar ahora
-                </button>
-            </form>
-            <p class="mt-5 text-sm text-[#4B5563]">
-                Respondemos al instante y activamos la red de búsqueda.
-            </p>
-            <p class="mt-2 text-[#2563EB] text-sm font-medium">
-                ✓ Más de 8,900 reencuentros logrados en México 🇲🇽
-            </p>
-        </div>
-        <div class="md:w-1/2 flex justify-center animate-fade-in">
-            <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Ilustración mascota" class="w-80 h-auto drop-shadow-xl">
-        </div>
+<section class="bg-[#32BAEA] text-white py-24">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
+    <div class="md:w-1/2">
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+        Perdida no significa imposible.
+        <br>
+        <span class="text-[#5642BB]">Volvamos a encontrarnos.</span>
+      </h1>
+      <p class="text-white/90 text-lg md:text-xl mb-8">
+        Lanza una alerta inteligente y conecta con vecinos, rescatistas y familias dispuestas a ayudar.
+      </p>
+      <form class="flex flex-col sm:flex-row items-center gap-4">
+        <input type="text" placeholder="Nombre de tu mascota..."
+               class="w-full sm:w-80 px-5 py-3 rounded-lg border border-white/40 bg-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[#5642BB]">
+        <button type="submit"
+                class="bg-[#5642BB] hover:bg-[#382C77] text-white font-semibold px-6 py-3 rounded-lg shadow-md transition">
+          Buscar ahora
+        </button>
+      </form>
+      <p class="mt-5 text-sm text-white/80">
+        Respondemos al instante y activamos la red de búsqueda.
+      </p>
+      <p class="mt-2 text-[#5642BB] text-sm font-medium">
+        ✓ Más de 8,900 reencuentros logrados en México 🇲🇽
+      </p>
     </div>
+    <div class="md:w-1/2 flex justify-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+           alt="Ilustración mascota" class="w-80 h-auto drop-shadow-xl">
+    </div>
+  </div>
 </section>
 
-<section class="bg-[#F0F9FF] text-[#065F46] py-20">
-    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
-        <div class="md:w-1/2 animate-slide-in-left">
-            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee" class="rounded-xl shadow-lg w-full object-cover" alt="Mascota reunida">
-        </div>
-        <div class="md:w-1/2 md:pl-12 animate-slide-in-right">
-            <h2 class="text-4xl font-bold mb-4">Tres pasos para un reencuentro rápido</h2>
-            <p class="text-gray-700 mb-4">Creamos una alerta geolocalizada que se difunde en redes sociales y canales locales. Tu anuncio llega exactamente a las personas correctas.</p>
-            <a href="{{ route('pricing') }}" class="inline-block bg-[#2563EB] hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium">Ver planes de rescate</a>
-            <div class="mt-6 grid grid-cols-2 gap-6">
-                <div>
-                    <p class="text-3xl font-bold">82+</p>
-                    <p class="text-sm text-gray-600">Búsquedas activas</p>
-                </div>
-                <div>
-                    <p class="text-3xl font-bold">48+</p>
-                    <p class="text-sm text-gray-600">Reencuentros hoy</p>
-                </div>
-            </div>
-        </div>
+
+<section class="bg-white text-gray-800 py-20">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+    <div class="md:w-1/2">
+      <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee"
+           class="rounded-xl shadow-lg w-full object-cover" alt="Mascota reunida">
     </div>
+    <div class="md:w-1/2 md:pl-12">
+      <h2 class="text-4xl font-bold mb-4 text-[#5642BB]">Tres pasos para un reencuentro rápido</h2>
+      <p class="text-gray-600 mb-4">
+        Creamos una alerta geolocalizada que se difunde en redes sociales y canales locales.
+      </p>
+      <a href="{{ route('pricing') }}"
+         class="inline-block bg-[#E53C49] hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium shadow">
+         Ver planes de rescate
+      </a>
+      <div class="mt-6 grid grid-cols-2 gap-6">
+        <div>
+          <p class="text-3xl font-bold text-[#5642BB]">82+</p>
+          <p class="text-sm text-gray-600">Búsquedas activas</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-[#FBB03B]">48+</p>
+          <p class="text-sm text-gray-600">Reencuentros hoy</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="bg-white py-20">
-    <div class="max-w-6xl mx-auto px-4 text-center animate-fade-in">
-        <h2 class="text-3xl font-bold mb-8">No estás solo. Estas familias lo consiguieron.</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-gray-100 p-6 rounded-lg shadow hover:scale-105 transition-transform">
-                <h3 class="font-bold text-[#065F46]">Javier Ortiz</h3>
-                <p class="text-sm text-gray-500 mb-2">Aguascalientes</p>
-                <p class="text-sm">“Mi gato se escondió por días. Gracias a esta plataforma, un vecino lo encontró en su patio.”</p>
-            </div>
-            <div class="bg-gray-100 p-6 rounded-lg shadow hover:scale-105 transition-transform">
-                <h3 class="font-bold text-[#065F46]">David Romero</h3>
-                <p class="text-sm text-gray-500 mb-2">Hermosillo</p>
-                <p class="text-sm">“Encontramos a nuestro perrito al día siguiente. La rapidez del servicio fue impresionante.”</p>
-            </div>
-            <div class="bg-gray-100 p-6 rounded-lg shadow hover:scale-105 transition-transform">
-                <h3 class="font-bold text-[#065F46]">Juan Carlos Pérez</h3>
-                <p class="text-sm text-gray-500 mb-2">Guadalajara</p>
-                <p class="text-sm">“Gracias a la difusión, apareció en 4 días. ¡Recomendado!”</p>
-            </div>
-        </div>
+<section class="bg-[#FBB03B]/10 py-20">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-8 text-[#5642BB]">
+      No estás solo. Estas familias lo consiguieron.
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transition-transform">
+        <h3 class="font-bold text-[#5642BB]">Javier Ortiz</h3>
+        <p class="text-sm text-gray-500 mb-2">Aguascalientes</p>
+        <p class="text-sm text-gray-700">“Mi gato se escondió por días...”</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transition-transform">
+        <h3 class="font-bold text-[#5642BB]">David Romero</h3>
+        <p class="text-sm text-gray-500 mb-2">Hermosillo</p>
+        <p class="text-sm text-gray-700">“Encontramos a nuestro perrito...”</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transition-transform">
+        <h3 class="font-bold text-[#5642BB]">Juan Carlos Pérez</h3>
+        <p class="text-sm text-gray-500 mb-2">Guadalajara</p>
+        <p class="text-sm text-gray-700">“Gracias a la difusión...”</p>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- Sección de historias con animación tipo acordeón -->
@@ -86,7 +98,7 @@
         <div x-data="{ open: 1 }" class="space-y-6">
             <!-- Historia 1 -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-all">
-                <button @click="open = open === 1 ? null : 1" class="w-full text-left px-6 py-4 bg-[#D1FAE5] font-semibold text-lg text-gray-800 flex justify-between items-center">
+                <button @click="open = open === 1 ? null : 1" class="w-full text-left px-6 py-4 bg-[#32BAEA] font-semibold text-lg text-gray-800 flex justify-between items-center">
                     <span>1. El regreso de Linda con Luciana</span>
                     <span x-text="open === 1 ? '-' : '+'"></span>
                 </button>
@@ -107,7 +119,7 @@
 
             <!-- Historia 2 -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-all">
-                <button @click="open = open === 2 ? null : 2" class="w-full text-left px-6 py-4 bg-[#D1FAE5] font-semibold text-lg text-gray-800 flex justify-between items-center">
+                <button @click="open = open === 2 ? null : 2" class="w-full text-left px-6 py-4 bg-[#32BAEA] font-semibold text-lg text-gray-800 flex justify-between items-center">
                     <span>2. Chimuelo y su gran amigo Hipo</span>
                     <span x-text="open === 2 ? '-' : '+'"></span>
                 </button>
@@ -128,7 +140,7 @@
 
             <!-- Historia 3 -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-all">
-                <button @click="open = open === 3 ? null : 3" class="w-full text-left px-6 py-4 bg-[#D1FAE5] font-semibold text-lg text-gray-800 flex justify-between items-center">
+                <button @click="open = open === 3 ? null : 3" class="w-full text-left px-6 py-4 bg-[#32BAEA] font-semibold text-lg text-gray-800 flex justify-between items-center">
                     <span>3. Sam, el viajero inesperado</span>
                     <span x-text="open === 3 ? '-' : '+'"></span>
                 </button>
@@ -150,9 +162,17 @@
     </div>
 </section>
 
-<section class="bg-[#E0F7FA] py-20 text-center animate-fade-in">
-    <h2 class="text-2xl md:text-4xl font-bold mb-4">Únete a nuestra red de búsqueda y reencuentros</h2>
-    <p class="text-[#4B5563] mb-6">Explora casos en tiempo real y sé parte de una comunidad que ayuda.</p>
-    <a href="{{ route('map') }}" class="inline-block bg-[#2563EB] text-white font-semibold px-6 py-3 rounded-md shadow-md hover:scale-105 transition">Explorar mapa</a>
+<section class="bg-[#5642BB] py-20 text-center text-white">
+  <h2 class="text-2xl md:text-4xl font-bold mb-4">
+    Únete a nuestra red de búsqueda y reencuentros
+  </h2>
+  <p class="mb-6 text-white/90">
+    Explora casos en tiempo real y sé parte de una comunidad que ayuda.
+  </p>
+  <a href="{{ route('map') }}"
+     class="inline-block bg-[#FBB03B] text-[#0B1220] font-semibold px-6 py-3 rounded-md shadow-md hover:scale-105 transition">
+    Explorar mapa
+  </a>
 </section>
+
 @endsection

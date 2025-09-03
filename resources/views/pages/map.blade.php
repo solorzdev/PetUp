@@ -2,10 +2,13 @@
 
 @section('content')
 {{-- Topbar --}}
-<div class="w-full bg-gradient-to-br from-[#DCFCE7] to-[#C7F7DE] text-[#065F46]">
+<div class="w-full bg-[#32BAEA] text-white">
   <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between gap-4">
     <h1 class="text-2xl md:text-3xl font-extrabold">Mapa de búsquedas</h1>
-    <a href="#" class="inline-flex items-center gap-2 rounded-full bg-[#2563EB] text-white px-5 py-2 font-semibold shadow hover:bg-[#1d4ed8] transition">
+    <a href="#"
+       class="inline-flex items-center gap-2 rounded-full 
+              bg-[#FBB03B] text-[#0B1220] px-5 py-2 font-semibold 
+              shadow hover:bg-[#e89a17] transition">
       Publicar alerta
     </a>
   </div>
